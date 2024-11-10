@@ -7,90 +7,143 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="./images/logo_.png" type="image/png">
+    <title>Mthokozisi Masondo</title>
 </head>
 
 <body>
 <!-- SECTION 1: HEADER -->
-<div class="bg-mobile bg-cover md:bg-desktop h-screen bg-cover bg-center">
-    <img src="" class="" alt=""> <!-- Logo -->
-<div class="hidden md:flex justify-end p-7 font-bold">
-    <a href="#Home" class="pr-14">HOME</a>
-    <a href="#About-me" class="pr-14">ABOUT ME</a>
-    <a href="#Technologies" class="pr-14">TECHNOLOGIES</a>
-    <a href="#Projects" class="pr-14">PROJECTS</a>
-    <a href="#Contact" class="pr-14">CONTACT</a>
+<div class="bg-mobile h-screen relative bg-cover md:bg-desktop h-screen bg-cover bg-center">
+<div class="absolute top-0 w-full flex justify-between items-center p-4 md:p-4">
+    <img src="./images/logo_.png" class="w-20 p-3" alt="Mthokozisi Masondo's Logo"> <!-- Logo -->
+
+<nav class="hidden md:flex justify-end text-lg w-full gap-14 font-bold p-7">
+    <a href="#Home" class="hover-underline">HOME</a>
+    <a href="#About-me" class="hover-underline">ABOUT ME</a>
+    <a href="#Technologies" class="hover-underline">TECHNOLOGIES</a>
+    <a href="#Projects" class="hover-underline">PROJECTS</a>
+    <a href="#Contact" class="hover-underline">CONTACT</a>
+</nav>
 </div>
-<div class="flex flex-col items-center justify-center pt-96 md:pr-160 pt-72">
-    <h1 class="font-semibold flex-nowrap md:font-bold pb-14 text-5xl text-white">Mthokozisi Masondo</h1>
-    <h2 class="md:font-semibold pb-14 text-4xl text-white">Front-End Developer</h2>
-    <button class="bg-orange-600 rounded-xl md:bg-orange-600 rounded-xl py-3 px-10 text-white text-lg font-semibold">DOWNLOAD MY CV</button>
+
+<div class="h-full flex flex-col flex-nowrap items-center justify-center pt-96 lg:pr-160 pt-72">
+    <h1 class="font-semibold lg:font-bold pb-14 text-5xl text-white">Mthokozisi Masondo</h1>
+    <h2 class="text-2xl md:font-semibold pb-14 text-4xl text-white">Front-End Developer</h2>
+    <a href="/CV/Mthokozisi_Masondo's_CV.pdf" download="Mthokozisi_Masondo's_CV.pdf" class="bg-orange-600 rounded-xl md:bg-orange-600 rounded-xl py-3 px-10 text-white text-lg font-semibold transition-transform hover:scale-105">
+        DOWNLOAD MY CV
+    </a>
 </div>
+<!-- navigation for mobile phones -->
+ <button id="mobile-menu-toggle" class="fixed top-4 right-4 md:hidden z-50">
+    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+    <svg fill="#000000" width="50px" height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><title>Artboard</title><path d="M768 306.2V383H256v-76.8h512zM256 536.6h512v-76.8H256v76.8zm0 153.6h512v-76.8H256v76.8z" fill-rule="evenodd"/></svg>
+ </button>
+
+ <div id="mobile-menu" class="fixed top-0 right-0 w-full h-screen bg-white/90 backdrop-blur-sm p-4 translate-x-full transition-transform duration-200 ease-in-out md:hidden">
+   <div class="flex flex-col items-center justify-center h-full space-y-8">
+    <a href="#Home" class="text-lg nav-link">HOME</a>
+    <a href="#About-me" class="text-lg nav-link">ABOUT ME</a>
+    <a href="#Technologies" class="text-lg nav-link">TECHNOLOGIES</a>
+    <a href="#Projects" class="text-lg nav-link">PROJECTS</a>
+    <a href="#Contact" class="text-lg nav-link">CONTACT</a>
+  </div>
+ </div>
 </div>
 
 <!-- SECTION 2: ABOUT ME -->
 <div id="About-me" class="flex justify-center items-center">
-    <div class="w-1/4 p-7">
-    <img src="./images/about-me.png" alt="">
+    <div class="w-1/4 p-7 hidden md:block">
+    <img src="./images/about-me.png" alt="Retro Computer">
     </div>
 
-    <div class="flex flex-col justify-center items-center w-1/2 p-7">
-        <h1 class="text-7xl font-bold text-orange-600 pb-14 underline decoration-2 decoration-orange-600 underline-offset-8">ABOUT ME</h1>
-        <p class="text-2xl font-bold">Hi, I'm Mthokozisi Masondo, a passionate programmer dedicated to solving real-life problems with code. After attending the Codespace Bootcamp, I discovered my love for programming and honed my skills in web development.</p>
-        <p class="text-2xl font-bold pt-4">As a lifelong learner, I thrive on new challenges and continuously seek opportunities to expand my skills. I invite you to explore my work and connect with me!</p>
+    <div class="flex flex-col justify-center items-center w-full md:w-1/2 p-7">
+        <h1 class="text-4xl md:text-7xl font-bold text-orange-600 pb-14 underline decoration-2 decoration-orange-600 underline-offset-8">ABOUT ME</h1>
+        <p class="text-xl md:text-2xl font-bold">Hi, I'm Mthokozisi Masondo, a passionate programmer dedicated to solving real-life problems with code. After attending the Codespace Bootcamp, I discovered my love for programming and honed my skills in web development.</p>
+        <p class="text-xl md:text-2xl font-bold pt-4">As a lifelong learner, I thrive on new challenges and continuously seek opportunities to expand my skills. I invite you to explore my work and connect with me!</p>
     </div>
 </div>
 
 <!-- SECTION 3: TECHNOLOGIES -->
-<hr class="border-t border-black my-8">
- <div id="Technologies" class="flex flex-col items-center justify-center pb-7">
-    <h1 class="text-7xl font-bold text-orange-600 pt-7 underline decoration-2 decoration-orange-600 underline-offset-8" alt="Technologies">TECHNOLOGIES</h1>
-    <div class="flex gap-48 pt-14">
+ <div id="Technologies" class="flex flex-col items-center justify-center my-14 py-14 bg-orange-500 h-96">
+    <h1 class="text-4xl md:text-7xl font-bold text-white pt-4 underline decoration-2 decoration-white underline-offset-8" alt="Technologies">TECHNOLOGIES</h1>
+    <div class="flex gap-7 md:gap-48 pt-14 justify-center">
         <!-- HTML -->
-        <img src="./icons/html-5.png" alt="Html">
+        <img src="./icons/html-5.png" alt="HTML" class="w-12 md:w-20">
         <!-- CSS -->
-        <img src="./icons/css-3.png" alt="Css">
+        <img src="./icons/css-3.png" alt="CSS" class="w-12 md:w-20">
         <!-- Tailwind -->
-        <img src="./icons/tailwind-css.png" alt="Tailwind">
+        <img src="./icons/tailwind-css.png" alt="Tailwind" class="w-12 md:w-20">
         <!-- Javascript -->
-        <img src="./icons/js.png" alt="Javascript">
+        <img src="./icons/js.png" alt="Javascript" class="w-12 md:w-20">
         <!-- React -->
-        <img src="./icons/react.png" alt="React">
+        <img src="./icons/react.png" alt="React" class="w-12 md:w-20">
     </div>
  </div>
 
  <!-- SECTION 4: PROJECTS -->
- <hr class="border-t border-black my-8">
- <div id="Projects" class="flex flex-col items-center justify-center">
-<h1 class="text-7xl font-bold text-orange-600 py-7 underline decoration-2 decoration-orange-600 underline-offset-8">PROJECTS</h1>
-<div class="pt-7 grid grid-cols-2 gap-4 p-14">
+ <div id="Projects" class="flex flex-col items-center justify-center py-14">
+<h1 class="text-4xl md:text-7xl font-bold text-orange-600 py-7 underline decoration-2 decoration-orange-600 underline-offset-8">PROJECTS</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-7 p-14">
 
     <!-- Cache Bank Landing Page -->
-    <div>
-     <h2 class="text-4xl font-semibold">Cache Bank Landing Page</h2>
-     <p class="text-2xl pb-6">- HTML, TAILWIND CSS</p>
-     <img src="./images/Cache-Bank.png" href="" alt="">
+    <div class="flex flex-col items-center text-center space-y-4">
+     <h2 class="text-2xl md:text-4xl font-semibold">Cache Bank Landing Page</h2>
+     
+     <a href="https://github.com/MthokozisiMasondo/SDF_Portfolio_Piece_CS20240186_WFO2407_GroupC_MthokozisiMasondo_SDF11" target="_blank" class="h-full relative group w-full overflow-hidden rounded-lg shadow-lg">
+     
+        <img src="./images/Cache-Bank.png" alt="Cache Bank Landing Page">
+    
+
+    <div class="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <img src="./icons/html-5.png" class="w-10 h-10" alt="HTML">
+        <img src="./icons/tailwind-css.png" class="w-10 h-10" alt="TAILWIND">
+    </div>
+   </a>
     </div>
 
     <!-- Agile Board -->
-    <div>
-    <h2 class="text-4xl font-semibold">Agile Board</h2>
-    <p class="text-2xl pb-6">- HTML, CSS, JAVASCRIPT</p>
-     <img src="./images/Agile-Board.png" href="" alt="">
+    <div class="flex flex-col items-center text-center space-y-4">
+    <h2 class="text-2xl md:text-4xl font-semibold">Agile Board</h2>
+     <a href="https://github.com/MthokozisiMasondo/CS20240186_WFO2407_GroupC_MthokozisiMasondo_JSL11" target="_blank" class="h-full relative group w-full overflow-hidden rounded-lg shadow-lg">
+        
+        <img src="./images/Agile-Board.png" alt="Agile Board">
+
+        <div class="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <img src="./icons/html-5.png" class="w-10 h-10" alt="HTML">
+            <img src="./icons/css-3.png" class="w-10 h-10" alt="CSS">
+            <img src="./icons/js.png" class="w-10 h-10" alt="Javascript">
+        </div>
+    </a>
     </div>
 
     <!-- Blackjack Game -->
-    <div>
-    <h2 class="text-4xl font-semibold">Blackjack Game</h2>
-    <p class="text-2xl pb-6">- HTML, CSS, JAVASCRIPT</p>
-     <img src="./images/Blackjack-Game.png" href="" alt="">
+    <div class="flex flex-col items-center text-center space-y-4">
+    <h2 class="text-2xl md:text-4xl font-semibold">Blackjack Game</h2>
+     <a href="https://github.com/MthokozisiMasondo/Module_9R_CS20240186_WFO2407_GroupC_MthokozisiMasondo_SDF09_R" target="_blank" class="h-full relative group w-full overflow-hidden rounded-lg shadow-lg">
+
+        <img src="./images/Blackjack-Game.png" alt="Blackjack Game">
+
+        <div class="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <img src="./icons/html-5.png" class="w-10 h-10" alt="HTML">
+            <img src="./icons/css-3.png" class="w-10 h-10" alt="CSS">
+            <img src="./icons/js.png" class="w-10 h-10" alt="Javascript">
+        </div>
+    </a>
     </div>
 
     <!-- Dashboard Chrome Extension -->
-    <div>
-    <h2 class="text-4xl font-semibold">Dashboard Chrome Extension</h2>
-    <p class="text-2xl pb-6">- HTML, CSS, JAVASCRIPT</p>
-     <img src="./images/Dashboard-Chrome-Extension.png" href="" alt="">
+    <div class="flex flex-col items-center text-center space-y-4">
+    <h2 class="text-2xl md:text-4xl font-semibold">Dashboard Chrome Extension</h2>
+     <a href="https://github.com/MthokozisiMasondo/Module_09_CS20240186_WFO2407_GroupC_MthokozisiMasondo_JSL09" target="_blank" class="h-full relative group w-full overflow-hidden rounded-lg shadow-lg">
+
+        <img src="./images/Dashboard-Chrome-Extension.png" alt="Dashboard Chrome Extension">
+
+        <div class="absolute inset-0 flex items-center justify-center gap-4 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <img src="./icons/html-5.png" class="w-10 h-10" alt="HTML">
+            <img src="./icons/css-3.png" class="w-10 h-10" alt="CSS">
+            <img src="./icons/js.png" class="w-10 h-10" alt="Javascript">
+        </div>
+    </a>
     </div>
 
 </div>
@@ -98,20 +151,45 @@
  </div>
 
 <!-- SECTION 5: FOOTER -->
- <footer id="Contact" class="bg-orange-600 h-28 flex flex-col items-center justify-center">
-    <h3 class="font-semibold text-3xl text-white">Contact Me</h3>
-    <div class="flex gap-28 pt-7">
+ <footer id="Contact" class="bg-orange-600 h-48 flex flex-col items-center justify-center">
+    <h3 class="text-xl font-semibold md:text-3xl text-white">Contact Me</h3>
+    <div class="flex gap-14 md:gap-28 py-7">
         <!-- Linked In -->
-        <img src="./icons/linkedin (2).png" href="" alt="linkedin">
+        <a href="https://www.linkedin.com/in/mthokozisi-masondo-229219318/" target="_blank" class="transition-transform hover:scale-105">
+            <img src="./icons/linkedin (2).png" alt="linkedin">
+        </a>
 
         <!-- Gmail -->
-        <img src="./icons/gmail-logo.png" href="" alt="gmail">
+        <a href="mailto:m.masondo2001@gmail.com" target="_blank" class="transition-transform hover:scale-105">
+            <img src="./icons/gmail-logo.png" alt="gmail">
+        </a>
         
         <!-- Github -->
-        <img src="./icons/github.png" href="" alt="github">
+        <a href="https://github.com/MthokozisiMasondo" target="_blank" class="transition-transform hover:scale-105">
+            <img src="./icons/github.png" alt="github">
+        </a>
     </div>
 
  </footer>
+
+ <!-- Script -->
+ <script>
+   const mobileMenu = document.getElementById("mobile-menu")
+    const menuToggle = document.getElementById("mobile-menu-toggle")
+    const navLinks = document.querySelectorAll('.nav-link')
+
+    // Toggle menu when hamburger is clicked
+    menuToggle.addEventListener("click", function() {
+        mobileMenu.classList.toggle("translate-x-full")
+    })
+
+    // Close menu when any navigation link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add("translate-x-full")
+        })
+    })
+</script>
 
 </body>
 </html>
